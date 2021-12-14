@@ -31,10 +31,14 @@
         <section id="container">
             {% include 'shared/header.html.twig' %}
             {% include 'shared/sidebar.html.twig' %}
-            {% block body %}
+            
                 <section id="main-content">
+                    <section class="wrapper">
+                        {% block body %}
+                        {% endblock %}
+                    </section>
                 </section>
-            {% endblock %}
+            
             {% include 'shared/footer.html.twig' %}
         </section>
 
